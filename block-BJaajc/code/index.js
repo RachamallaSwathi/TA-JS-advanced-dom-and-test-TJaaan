@@ -12,10 +12,10 @@ function isPalindrome(str){
 // 3. Create 2 functions that calculate properties of a circle, using the definitions here.
 const PI=3.14;
 
-// - Create a function called `getCircumfrence`:
-function getCircumfrence(radius){
+// - Create a function called `getCircumference`:
+function getCircumference(radius){
 
-    return `The circumference is ${2*Math.PI*radius}`
+    return `The circumference is ${Math.floor(2*Math.PI*radius)}`
 
 }
 // Pass the radius of a circle to the function and it returns the circumference based on the radius, and output `The circumference is NN`.
@@ -28,4 +28,4 @@ function getArea(radius){
 
 // Pass the radius to the function and it returns the area based on the radius, and output `The area is NN`.
 
-module.exports={getFullName,isPalindrome,getCircumfrence,getArea,}
+module.exports={getFullName,isPalindrome,getCircumference,getArea,}
