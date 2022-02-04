@@ -9,43 +9,24 @@ test('Swathi + Rachamalla gives Swathi Rachamalla', () =>{
     expect(getFullName("Swathi"," Rachamalla")).not.toBe("Swathi Rachamalla")
 })
 
-test('test gives true',() => {
-    expect(isPalindrome("test")).toBe(true);
+test('abba gives true',() => {
+    expect(isPalindrome("abba")).toBe(true);
 })
 
-test(`  reviver is palindrom`,()=>{
-    expect(isPalindrome('reviver')).toBeTruthy();
-})
-test(`level is palindrom`,()=>{
-    expect(isPalindrome('level')).toBeTruthy();
-})
-test(`radar is palindrom`,()=>{
-    expect(isPalindrome('radar')).toBeTruthy();
+test('abba gives true',() => {
+    expect(isPalindrome("abba ")).not.toBe(true);
 })
 
-// getCircumfrence testing
-
-test(`circumference is 12.56`,()=>{
-    expect(getCircumfrence(2)).toBe("The circumference is 12.56");
+test("Circumference with radius 5 is 31",()=>{
+    expect(getCircumference(5)).toBe('The circumference is 31')
 })
-test(`circumference is 18.84`,()=>{
-    expect(getCircumfrence(3)).toBe("The circumference is 18.84");
-})
-test(`circumference is 25.12`,()=>{
-    expect(getCircumfrence(4)).toBe("The circumference is 25.12");
+test("Circumference with radius 5 is 31",()=>{
+    expect(getCircumference(5.0)).not.toBe('The circumference is 31.0')
 })
 
-
-
-
-// testing getArea 
-
-test(`Area is 12.56`,()=>{
-    expect(getArea(2)).toBe("The area is 12.56");
+test("Area with radius 5 is 78",()=>{
+    expect(getArea(5)).toBe('The area is 78')
 })
-test(`Area is 28.26`,()=>{
-    expect(getArea(3)).toBe("The area is 28.259999999999998");
-})
-test(`Area is 50.24`,()=>{
-    expect(getArea(4)).toBe("The area is 50.24");
+test("Area with radius 5 is 78",()=>{
+    expect(getArea(5.0)).not.toBe('The area is 78.0')
 })
