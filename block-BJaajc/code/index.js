@@ -28,9 +28,4 @@ function getArea(radius){
 
 // Pass the radius to the function and it returns the area based on the radius, and output `The area is NN`.
 
-module.exports={
-    getFullName,
-    isPalindrome,
-    getCircumfrence,
-    getArea,
-}
+module.exports={getFullName,isPalindrome,getCircumfrence,getArea,}
