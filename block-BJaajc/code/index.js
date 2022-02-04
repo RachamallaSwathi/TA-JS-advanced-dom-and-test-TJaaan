@@ -1,6 +1,3 @@
-// - Positive Test verifies expected behavior with valid data.
-// - Negative Test verifies expected behavior with invalid data.
-// - Edge Case is a subset of positive tests, which checks the extreme edges of valid values.
 
 // 1. Write a function named `getFullName` that accepts two input `firstName` and `lastName` and return the `fullName`
 function getFullName(firstName,lastName){
@@ -25,9 +22,10 @@ function getCircumfrence(radius){
 
 // - Create a function called `getArea`:
 function getArea(radius){
-
-    return `The area is ${PI*radius*radius}`
+    let area  = Math.floor(Math.PI*radius*radius);
+    return `The area is ${area}`;
 }
+
 // Pass the radius to the function and it returns the area based on the radius, and output `The area is NN`.
 
 module.exports={
