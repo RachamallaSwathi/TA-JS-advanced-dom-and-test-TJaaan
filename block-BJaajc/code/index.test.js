@@ -9,12 +9,12 @@ test('Swathi + Rachamalla gives Swathi Rachamalla', () =>{
     expect(getFullName("Swathi"," Rachamalla")).not.toBe("Swathi Rachamalla")
 })
 
-test('abba gives true',() => {
-    expect(isPalindrome("abba")).toBe(true);
+test('aabb gives true',() => {
+    expect(isPalindrome("aabb")).toBe(true);
 })
 
-test('abba gives true',() => {
-    expect(isPalindrome("abba ")).not.toBe(true);
+test('aabb gives true',() => {
+    expect(isPalindrome("aabb ")).not.toBe(true);
 })
 
 test("Circumference with radius 5 is 31",()=>{
